@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>upload file</title>
+</head>
+<body>
+<h1>上传文件测试</h1>
+    <form action="?" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <table>
+                <tr>
+                    {%csrf_token%}
+                    <td><input type="file" name="myfile"></td>
+                    <td><input type="submit" name="submit"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
